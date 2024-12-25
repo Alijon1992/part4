@@ -18,6 +18,13 @@ jobs:
           echo |
             echo this is a multiline comment
             echo and this job has been executed from my self-hosted runner
+      - name: toJSON function
+        run: |
+          echo |
+           echo "${{toJson(runner)}}"
+           echo "${{toJson(job)}}"
+           echo "${{toJson(steps)}}"
+           
   a_simple_job:
     name: my simple job
     runs-on: ubuntu-latest
