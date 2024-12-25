@@ -30,4 +30,8 @@ jobs:
         shell: python
         run: print("this is using the python shell")
       - name: toJSON function
-        run: echo "${{toJson(steps)}}"
+        run: |
+          echo |
+            "${{toJson(runner)}}"
+            "${{toJson(job)}}"
+            "${{toJson(steps)}}"
