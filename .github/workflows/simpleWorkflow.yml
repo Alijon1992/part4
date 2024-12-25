@@ -7,17 +7,17 @@ on:
       - main
 
 jobs:
-  # my_self_hosted_job:
-  #   name: my self hosted job
-  #   runs-on: self-hosted
-  #   steps:
-  #     - name: step in a self-hosted runner
-  #       id: selfhostedID
-  #       shell: sh
-  #       run: |
-  #         echo |
-  #           echo this is a multiline comment
-  #           echo and this job has been executed from my self-hosted runner
+  my_self_hosted_job:
+    name: my self hosted job
+    runs-on: self-hosted
+    steps:
+      - name: step in a self-hosted runner
+        id: selfhostedID
+        shell: sh
+        run: |
+          echo |
+            echo this is a multiline comment
+            echo and this job has been executed from my self-hosted runner
   a_simple_job:
     name: my simple job
     runs-on: ubuntu-latest
